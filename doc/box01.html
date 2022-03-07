@@ -1,1 +1,53 @@
-첫 수업
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스모델 01</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        div{
+            background: rgb(0, 132, 255);
+            width: 300px;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid black;
+        }
+        .border-box {
+            box-sizing: border-box;
+            background: rgb(255, 238, 0);
+            width: 300px;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid black;
+        }
+        span {
+            background: rgb(0, 132, 255);
+            width: 300px;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid black;
+        }
+        .display-block {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<!--글자 그림(html의 내용에 관련된 태그를 뺀 거의 모든 태그는 박스)-->
+<div>
+    BOX
+</div>
+<div class="border-box">
+    BOX
+</div>
+<span>INLINE</span>
+<span class="display-block">INLINE</span>
+<script>
+
+</script>
+</body>
+</html>
