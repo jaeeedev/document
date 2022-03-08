@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Serif KR", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.header h1 {
+  float: left;
+  padding: 0 15px;
+}
+
+.header h1 a {
+  display: block;
+}
+
+.header h1 img {
+  height: 100px;
+  vertical-align: middle;
+}
+
+.header nav {
+  float: right;
+}
+
+.header nav ul li {
+  float: left;
+  padding: 0 15px;
+  line-height: 100px;
+  list-style: none;
+}
+
+.first {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.first .fig01 img {
+  display: block;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.first .slogan {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.first .slogan h2 {
+  font-size: 48px;
+}
+
+.second figure {
+  float: left;
+  width: 33.333333%;
+  padding: 0 15px;
+}
+
+.second figure img {
+  width: 100%;
+}
+
+.second h2,
+p {
+  text-align: center;
+}
+
+.second p {
+  margin-bottom: 20px;
+}
+
+.second figure a {
+  display: block;
+  text-decoration: none;
+  background: #000;
+  width: 100px;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 2;
+  margin-top: 15px;
+}
