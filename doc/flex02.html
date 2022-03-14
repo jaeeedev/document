@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플렉스02</title>
+    <style>
+
+        h1 {
+            font-size: 50px;
+            text-transform: uppercase;
+        }
+
+        .container {
+            width: 100vw;
+            height: 40px;
+            margin: 50px auto;
+            background: #ddd;
+            
+        }
+        .flex01 {
+            display: flex;
+        }
+        .flex02 {
+            display: flex;
+            justify-content: end;
+
+        }
+        .flex03 {
+            display: flex;
+            justify-content: center;
+        }
+        .flex04 {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .flex05 {
+            display: flex;
+        }
+        .flex05 .itm {
+            flex:1;
+        }
+        .itm {
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+        .itm:nth-child(1){
+            background: rgb(48, 51, 255);
+        }
+        .itm:nth-child(2){
+            background: rgb(55, 148, 255);
+        }
+        .itm:nth-child(3){
+            background: rgb(121, 199, 245);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>flex</h1>
+    <div class="container flex01">
+        <div class="itm">A</div>
+        <div class="itm">B</div>
+        <div class="itm">C</div>
+    </div>
+    <h2>display: flex;</h2>
+    <p>display: flex를 하면 자식 요소들이 가로로 정렬된다.</p>
+    <div class="container flex02">
+        <div class="itm">A</div>
+        <div class="itm">B</div>
+        <div class="itm">C</div>
+    </div>
+    <h2>justify-content: end;</h2>
+    <p>justify-content를 이용하면 요소들의 정렬 방향을 정할 수 있다.</p>
+    <div class="container flex03">
+        <div class="itm">A</div>
+        <div class="itm">B</div>
+        <div class="itm">C</div>
+    </div>
+    <h2>justify-content: center;</h2>
+    <p>center인 경우 요소들이 가운데로 정렬된다.</p>
+    <div class="container flex04">
+        <div class="itm">A</div>
+        <div class="itm">B</div>
+        <div class="itm">C</div>
+    </div>
+    <h2>justify-content: space-between</h2>
+    <p>space-between을 하면 요소들이 양 끝에 붙어서 균일한 간격으로 나눠진다.</p>
+    <div class="container flex05">
+        <div class="itm">A</div>
+        <div class="itm">B</div>
+        <div class="itm">C</div>
+    </div>
+    <h2>flex: n;</h2>
+    <p>자식 요소들에 flex:n 을 주게 되면 그 숫자 비율만큼 사용가능한 너비를 꽉 채운다.
+        <br> 여기서는 flex:1
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디스플레이01</title>
+  
+</head>
+<style>
+    @import url("https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .none {
+        display: none;
+    }
+
+    @media (max-width: 1000px) {
+        .none {
+            display: block;
+            font-size: 0;
+            text-align: center;
+        }
+
+        i {
+            position: fixed;
+            top: 50px;
+            right: 50px;
+            font-size: 30px;
+            background: #ddd;
+            padding: 10px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            left: -350px;
+            background: #333;
+            color: #fff;
+            padding: 100px 0 0 50px;
+            width: 350px;
+            height: 100vh;
+            transition: 0.5s ease;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        nav.active {
+            left: 0;
+        }
+    }
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">menu01</a></li>
+            <li><a href="#">menu02</a></li>
+            <li><a href="#">menu03</a></li>
+            <li><a href="#">menu04</a></li>
+            <li><a href="#">menu05</a></li>
+        </ul>
+    </nav>
+    <div class="none">
+        <i class="xi-bars"></i>
+    </div>
+
+    <div class="mopen">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script>
+        $("i").on("click", function(){
+            $("nav").toggleClass("active");
+        })
+    </script>
+</body>
+
+</html>

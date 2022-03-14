@@ -46,29 +46,6 @@
         .wrap {
             margin-bottom: 2rem;
         }
-
-        .abre {
-            width: 100%;
-            height: 500px;
-            border: 1px solid #000;
-            position: relative;
-        }
-        
-        .abre .position1 {
-            position: relative;
-           top:50%;
-           left: 25%;
-        }
-        .abre .position2 {
-            position: absolute;
-            top: 50%;
-            right: 25%;
-            background: #000;
-            border: 1px solid #fff;
-            color: #fff;
-            z-index: 1;
-        }
-
     </style>
 </head>
 
@@ -176,27 +153,15 @@
         <button class="closePopup">CLOSE</button>
     </div>
 
-    <div class="abre">
-        <div class="position1">
-            포지션 보기
-        </div>
-        <div class="position2">
-            포지션 보기
-        </div>
-    </div>
-    <button class="pos">
-        버튼
-    </button>
+ 
 
     <script>
-        // 왜 안돼지???
-        // 좋은 접근이다. 열심히 해봐라....
         const popup = document.querySelector(".popup");
         const btn = document.querySelectorAll(".closePopup");
 
         const popupHandler = e => {
             console.log(e.target.parentNode);
-            e.target.parentNode.style.display='none';
+            e.target.parentNode.hidden = true;
         }
 
         btn.forEach(el => el.addEventListener("click", popupHandler))
