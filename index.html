@@ -2,89 +2,112 @@
 <html lang="ko">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>학원에서 배우는 것</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+        * {
+            color: inherit;
+        }
+
+        h1 {
+            font-weight: 900;
+        }
+        body {
+            font-family: "Noto Sans KR";
+        }
+
+        li a {
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        li {
+            margin-bottom: 30px;
+            padding: 10px;
+            border-bottom: 1px solid #666;
+        }
+    </style>
 </head>
-<style>
-  body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-
-  h1 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-    font-size: 2.5rem;
-    margin-left: 2rem;
-    background: linear-gradient(45deg, #c5189a, #2377ff 60%);
-    color: transparent;
-    -webkit-background-clip: text;
-  }
-
-  h2 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-    margin-left: 2rem;
-    background: linear-gradient(45deg, #c5189a, #2377ff 20%);
-    color: transparent;
-    -webkit-background-clip: text;
-  }
-
-  ul {
-    padding-right: 40px;
-  }
-
-  ul li {
-    padding: 1rem;
-    border: 1px solid rgb(216, 216, 216);
-    background: #f5f7f9;
-    box-shadow: 0px 8px 10px 1px rgba(0, 0, 0, 0.2);
-    list-style-type: none;
-    margin-bottom: 1rem;
-    border-radius: 0.8rem;
-  }
-
-  ul li a {
-    display: inline-block;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-family: 'Poppins', sans-serif;
-    color: black;
-    transition: 0.4s;
-  }
-
-  ul li a:hover {
-    color: #2377ff;
-    transform: scale(1.15);
-  }
-
-  ul li p {
-    font-size: 0.8rem;
-  }
-</style>
 
 <body>
-  <h1>HTML / CSS /JQUERY document</h1>
-  <hr>
-  <h2>HTML / CSS</h2>
-  <ul>
-    <li>
-      <a href="./doc/box01.html" rel="noopener" target="_blank">box-model</a>
-      <p>첫 수업은 박스 모델에 대한 설명...</p>
-    </li>
-    <li>
-      <a href="./doc/layout02.html" rel="noopener" target="_blank">layout</a>
-      <p>float를 이용한 레이아웃 공부</p>
-      <a href="./doc/layout03.html" rel="noopener" target="_blank">layout2</a>
-      <p>float를 이용한 레이아웃 복습</p>
-      <a href="./doc/layout04.html" rel="noopener" target="_blank">layout3</a>
-      <p>flex를 이용한 레이아웃 복습</p>
-    </li>
-  </ul>
+    <h1>HTML / CSS /JQUERY document</h1>
+    <hr>
+    <h2>HTML / CSS</h2>
+    <ol>
+        <li>
+            <a href="./doc/box01.html" rel="noopener" target="_blank">box-model 01</a>
+            <p>첫 수업은 박스 모델에 대한 설명...박스는 늘어난다.
+                <br>width: auto, height: auto
+            </p>
+            <em>2022.03.04</em>
+        </li>
+        <li>
+            <a href="./doc/box03.html" rel="noopener" target="_blank">box-model 02</a>
+            <p>박스는 겹쳐 쓸 수 있다. 박스는 부모 자식 관계를 가진다.
+
+            </p>
+            <em>2022.03.07</em>
+        </li>
+        <li>
+            <a href="./doc/display01.html" rel="noopener" target="_blank">display</a>
+            <p>width에 따라 변하는 화면을 만들었다. display를 통해 <br>
+                특정한 화면 너비에 따라 아이콘이 화면에 보이지 않게 할 수 있다.
+            </p>
+            <em>2022.03.08</em>
+        </li>
+        <li>
+            <a href="./doc/layout01.html" rel="noopener" target="_blank">float</a>
+            <p>float를 이용해 가로정렬을 할 수 있다. 하지만 부모 요소의 공간을 없애버리기 때문에 의사 요소(::after)를 활용해 늘려주어야 한다.
+            </p>
+            <em>2022.03.08</em>
+        </li>
+        <li>
+            <a href="./doc/position01.html" rel="noopener" target="_blank">position</a>
+            <p>relative는 원래 위치를 기준으로 좌표를 가진다. absolute는 position을 가진 부모 요소를 기준으로 좌표를 가진다. <br>
+                fixed는 화면에 고정된다. sticky는 특정 좌표에 도달했을 때 화면에 고정된다.
+            </p>
+            <em>2022.03.11</em>
+        </li>
+        <li>
+            <a href="./doc/flex02.html" rel="noopener" target="_blank">flex</a>
+            <p>flex는 가로 정렬을 하기 용이하다(세로정렬도 된다)<br>
+                justify-content를 통해 정렬 스타일(center, space-...)을 지정할 수 있다.
+            </p>
+            <em>2022.03.11</em>
+        </li>
+        <li>
+            <a href="./doc/all_layout02.html" rel="noopener" target="_blank">slick.js</a>
+            <p>
+                slick.js를 이용해 슬라이더 구현. position과 전체적인 css를 공부
+                <br>간단한 제이쿼리
+            </p>
+            <em>2022.03.14</em>
+        </li>
+    </ol>
+
+    <hr>
+
+
+    <h2>layout</h2>
+    <ul>
+        <li><a href="./doc/layout02.html" rel="noopener" target="_blank">레이아웃 01</a>
+            <p>
+                float를 이용한 레이아웃
+            </p>
+            <em>2022.03.08</em>
+        </li>
+        <li><a href="./doc/flex03.html" rel="noopener" target="_blank">레이아웃 02</a>
+            <p>
+                flex를 이용한 레이아웃
+            </p>
+            <em>2022.03.14</em>
+        </li>
+    </ul>
+</body>
 </body>
 
 </html>
