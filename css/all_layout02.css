@@ -20,20 +20,20 @@
 }
 
 .mainVisual .mainSlide .item01 {
-    background-image: url("../img/main_slider_n01.jpg");   
+    background-image: url("../img/pic01.jpg");   
 }
 
 .mainVisual .mainSlide .item02 {
-    background-image: url("../img/main_slider_n02.jpg");
+    background-image: url("../img/pic04.jpg");
 }
 .mainVisual .mainSlide .item03 {
-    background-image: url("../img/main_slider_n05.jpg");
+    background-image: url("../img/pic03.jpg");
 }
 
 .slick-dots {
     position: absolute;
     left: 50%;
-    bottom: 100px;
+    bottom: 40px;
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -43,15 +43,15 @@
 }
 
 .mainVisual .slick-dots li {
-    background: #ff0;
+    background: rgba(0,0,0,0.5);
     width: 100px;
-    height: 10px;
+    height: 5px;
     border-radius: 2px;
     cursor: pointer;
 
 }
 
-/*
+
 .mainVisual .slick-arrow {
     position: absolute;
     z-index: 999;
@@ -76,10 +76,10 @@
     right: 100px;
     transform: translateY(-50%) rotate(135deg);
 }
-*/
+
 
 .mainVisual .slick-dots li.slick-active {
-    background: #444;
+    background: #fff;
 }
 
 .mainVisual .slick-dots button {
@@ -89,7 +89,7 @@
 .mainVisual .slideArrows i {   
     position: absolute;
     top: 50%;
-    font-size: 100px;
+    font-size: 80px;
     color: rgba(255, 255, 255, 0.5);
 }
 
@@ -99,4 +99,5 @@
 .mainVisual .slideArrows i:last-child {
     right: 100px;
 }
+
 
