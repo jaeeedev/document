@@ -37,7 +37,9 @@ i {
 
 
 .tabMenu .tabLink li.active {
-    color:rgba(25, 109, 218, 0.925);
+    font-weight: 700;
+    font-size: 18px;
+    transform: translateY(-20%);
 }
 
 .tabContent {
@@ -62,6 +64,7 @@ i {
     text-align: center;
     color: #fff;
     background: url(../img/pic03.jpg) no-repeat fixed center center/cover;
+    margin-bottom: 200px;
 }
 
 .bgFixed h2 {
@@ -71,3 +74,8 @@ i {
     margin-bottom: 30px;
 }
 
+.footerWrap {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
