@@ -1,0 +1,9 @@
+.mainVisual {
+    position: relative;
+}
+
+.mainVisual .sliceArrows i {
+    position: absolute;
+    top: 50%;
+    font-size: 100px;
+}
