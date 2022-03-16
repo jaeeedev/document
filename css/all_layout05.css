@@ -79,3 +79,10 @@ i {
     margin: 0 auto;
     text-align: center;
 }
+
+
+.footerWrap h2 {
+    font-size: 40px;
+    padding: 20px;
+    font-weight: 700;
+}
