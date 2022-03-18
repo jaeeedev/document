@@ -1,6 +1,4 @@
-.Wrap {
 
-}
 /* topBanner 2022.03.17 최종수정 */
 .topBanner {
     padding: 30px 0;
@@ -28,11 +26,8 @@
 }
 
 .topBanner .container a {
-    display: inline-block;
-    height: 16px;
-    line-height: 14px;
     margin-left: 20px;
-    padding: 0 20px;
+    padding: 5px 20px;
     margin-bottom: 10px;
     font-size: 13px;
     font-weight:300;
@@ -51,9 +46,6 @@
 
  /* header 2022.03.17 최종수정  */
 
-.headerWrap {
-
-}
 
 .headerWrap .container {
     display: flex;
@@ -126,11 +118,60 @@
 }
 
 .mainVisual .visualSlide figure {
+    position: relative;
     height: 600px;
 }
+/* 
+.mainVisual .visualSlide figure i {
+    position: absolute;
+    top: 100px;
+    right: 200px;
+    font-size: 100px;
+    color: #f00;
+    opacity: 0;
+    transition: 0.5s;
+}
 
-.mainVisual .visualSlide figure.slick-active {
+.mainVisual .visualSlide figure.oo i {
+    opacity: 1;
+    animation: heart 1s infinite;
+}
 
+@keyframes heart {
+    0% {
+        transform: scale(1);
+    }
+    20% {transform: scale(0.5);
+    }
+    50% { transform: scale(1);
+    }
+    70% { transform: scale(0.5);
+    }
+    100% { transform: scale(1);
+    }
+} */
+
+.msLeft {
+    position: absolute;
+    top: 50%;
+    left: 200px;
+    z-index: 999;
+    border-top: 100px solid #fff;
+    border-left: 100px solid transparent;
+    transform: translateY(-50%) rotate(-135deg);
+}
+
+.msLeft.oo {
+    border-top: 100px solid #333;
+}
+
+.msRight {
+    position: absolute;
+    top: 50%;
+    right: 200px;
+    border-top: 100px solid #fff;
+    border-left: 100px solid transparent;
+    transform: translateY(-50%) rotate(45deg);
 }
 
 .mainVisual .visualSlide figure .inner {
@@ -138,6 +179,10 @@
     margin: 300px auto 0 auto;
     padding: 0 15px;
     color: #fff;
+}
+
+.mainVisual .visualSlide figure.itm02 .inner {
+    color: #333;
 }
 
 .mainVisual .inner h3 {
@@ -158,12 +203,12 @@
     transition: 1s 1s;
 }
 
-.mainVisual figure.slick-active .inner h3 {
+.mainVisual figure.oo .inner h3 {
     opacity: 1;
     transform: translateY(0);
 }
 
-.mainVisual figure.slick-active .inner p {
+.mainVisual figure.oo .inner p {
     opacity: 1;
     transform: translateY(0);
 }
@@ -215,4 +260,257 @@
 
 .mainVisual .visualSlide .slick-dots button {
     display: none;
+}
+
+
+.mainProduct {
+    padding: 100px 0;
+    text-align: center;
+    color: #555;
+}
+
+.mainProduct h2 {
+    font-size: 25px;
+    font-weight: 100;
+    letter-spacing: 0.5em;
+    margin-bottom: 10px;
+}
+
+.mainProduct p {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    margin-bottom: 30px;
+}
+
+.mainProduct .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mainProduct .container figure {
+    position: relative;
+    flex: 1;
+    padding: 0 15px;
+    
+}
+
+.mainProduct .container .inner {
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.mainProduct .container strong {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.mainProduct .container figure a {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #fff;
+    color: #333;
+    border: 1px solid #333;
+}
+
+.mainProduct .container figure a:hover {
+    
+    background: #333;
+    color: #fff;
+}
+
+.mainProduct .inner img { 
+    transition: 0.5s;
+}
+
+.mainProduct .inner:hover img {
+    transform: scale(1.4);
+}
+
+.mainProduct .container figure .label {
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    border-top: 10px solid #333;
+    border-left: 50px solid #333;
+    border-bottom: 10px solid #333;
+    border-right: 10px solid transparent;
+}
+
+.mainProduct .label span {
+    position: absolute;
+    top: -6px;
+    left: -35px;
+    color: #fff;
+}
+
+.eventBanner {
+    padding: 100px 0;
+    background: url(../images/mainvisual03.jpg) no-repeat fixed center center/cover;
+    text-align: center;
+    color: #fff;
+    filter: grayscale(1);
+}
+
+.eventBanner h2 {
+    font-size: 25px;
+    font-weight: 100;
+    letter-spacing: 0.5em;
+    margin-bottom: 10px;
+}
+
+.eventBanner p {
+    font-size: 15px;
+    font-weight:300;
+    letter-spacing: -0.025em;
+    margin-bottom: 30px;
+}
+
+.eventBanner i {
+    background: #333;
+    padding: 7px;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+
+.eventProduct {
+    padding: 100px 0;
+}
+
+.eventProduct .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.eventProduct .container > div {
+    padding: 0 15px;
+}
+
+.eventProduct .left {
+    width: 40%;
+}
+
+.eventProduct .left figure {
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+.eventProduct .right {
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+
+.eventProduct h3 {
+    font-size: 25px;
+    font-weight: 100;
+    letter-spacing: 0.5em;
+    margin-bottom: 10px;
+}
+
+.eventProduct p {
+    line-height: 1.4;
+    font-size: 15px;
+    font-weight:300;
+    letter-spacing: -0.025em;
+    margin-bottom: 30px;
+}
+
+.eventProduct i {
+    background: #333;
+    color: #fff;
+    padding: 13px;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.allProduct {
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+    background: #f2f2f2;
+}
+
+.allProduct .container {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.allProduct .allProductSlide figure {
+    padding: 0 15px;
+}
+
+.allProduct h2 {
+    font-size: 25px;
+    font-weight: 100;
+    letter-spacing: 0.5em;
+    margin-bottom: 10px;
+}
+
+.allProduct p {
+    line-height: 1.4;
+    font-size: 15px;
+    font-weight:300;
+    letter-spacing: -0.025em;
+    margin-bottom: 30px;
+}
+
+.allProduct .inner {
+    margin-bottom: 20px;
+}
+
+.allProduct .inner + strong {
+    display: block;
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.allProduct .slick-dots {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.allProduct .slick-dots li {
+    width: 13px;
+    height: 13px;
+    background: #333;
+    border-radius: 50%;
+}
+
+
+.allProduct .slick-dots li.slick-active {
+    background: #fff;    
+}
+
+.allProduct .slick-dots li button {
+    display: none;
+
+}
+
+.allProduct i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: #fff;
+    background: #333;
+    padding: 10px;
+}
+
+.allProduct i:first-child {
+    margin-left: -700px;
+}
+
+.allProduct i:last-child {
+    margin-left: 700px;
 }
