@@ -121,35 +121,6 @@
     position: relative;
     height: 600px;
 }
-/* 
-.mainVisual .visualSlide figure i {
-    position: absolute;
-    top: 100px;
-    right: 200px;
-    font-size: 100px;
-    color: #f00;
-    opacity: 0;
-    transition: 0.5s;
-}
-
-.mainVisual .visualSlide figure.oo i {
-    opacity: 1;
-    animation: heart 1s infinite;
-}
-
-@keyframes heart {
-    0% {
-        transform: scale(1);
-    }
-    20% {transform: scale(0.5);
-    }
-    50% { transform: scale(1);
-    }
-    70% { transform: scale(0.5);
-    }
-    100% { transform: scale(1);
-    }
-} */
 
 .msLeft {
     position: absolute;
@@ -443,7 +414,7 @@
 
 }
 
-.allProduct .allProductSlide figure {
+.allProduct .aProductSlide figure {
     padding: 0 15px;
 }
 
@@ -514,3 +485,162 @@
 .allProduct i:last-child {
     margin-left: 700px;
 }
+
+.slick-slide {
+    transition: 0.5s;
+}
+
+
+.movieBg {
+    padding: 100px 0;
+    background: #000;
+    filter: grayscale(1);
+    color: #fff;
+    text-align: center;
+
+}
+
+.movieBg h3 {
+    font-size: 25px;
+    font-weight: 100;
+    letter-spacing: 0.5em;
+    margin-bottom: 10px;
+}
+
+.movieBg p {
+    line-height: 1.4;
+    font-size: 15px;
+    font-weight:300;
+    letter-spacing: -0.025em;
+    margin-bottom: 30px;
+}
+
+.movieBg i {
+    font-size: 20px;
+    padding: 10px;
+    background: #333;
+    border-radius: 50%;
+}
+
+.customerArea {
+    padding: 100px 0;
+    background: #f2f2f2;
+}
+
+.customerArea .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.customerArea .container>div {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.customerArea .tabMenu {
+    display: flex;
+}
+
+.customerArea .tabMenu>li {
+    flex: 1;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.customerArea .tabMenu>li.oo {
+    background: #369;
+}
+
+.customerArea .tabMenu>li~li {
+    border-left: 1px solid #fff;
+}
+
+
+.customerArea .tabContent>div {
+    display: none;
+}
+
+.customerArea .tabContent>div.oo {
+    display: block;
+
+}
+
+.customerArea .tabContent li {
+    padding: 10px;
+    border-bottom: 1px solid #999;
+}
+
+.customerArea .tabContent a {
+    display: flex;
+    justify-content: space-between;
+}
+
+.customerArea .tabContent strong {
+    display: block; 
+    white-space: nowrap;
+    width: 400px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+.rightPic {
+    position: relative;
+}
+
+
+.rightPic .more{
+    width: 100%;
+    height: 250px;
+    background: url(../images/mainvisual01.jpg) no-repeat center center/cover;
+    filter:grayscale(1);
+    transition: 0.5s;
+}
+
+
+.rightPic button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px 30px;
+    line-height: 50px;
+    border-radius: 15px;
+    border: 1px solid #fff;
+    background: rgba(255,255,255,0.5);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+.rightPic button:hover {
+    background: #fff;
+}
+
+.rightPic i {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 100px;
+    opacity: 0;
+    transition: 0.5s;
+    color: #fff;
+    animation: heart 1s infinite;
+}
+
+
+@keyframes heart {
+    0% {
+        transform: scale(1);
+    }
+    20% {transform: scale(0.5);
+    }
+    50% { transform: scale(1);
+    }
+    70% { transform: scale(0.5);
+    }
+    100% { transform: scale(1);
+    }
+} 
