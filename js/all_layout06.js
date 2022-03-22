@@ -89,11 +89,11 @@ $(".movieBg i:last-child").on("click", function () {
     $("#bgndVideo").YTPPlay();
 })
 
-$(".tabMenu li").on("click", function () {
-    var idx = $(this).index();
-    $(this).addClass("oo").siblings().removeClass("oo");
-    $(".tabContent>div").eq(idx).addClass("oo").siblings().removeClass("oo");
-});
+// $(".tabMenu li").on("click", function () {
+//     var idx = $(this).index();
+//     $(this).addClass("oo").siblings().removeClass("oo");
+//     $(".tabContent>div").eq(idx).addClass("oo").siblings().removeClass("oo");
+// });
 
 
 const hbtn = document.querySelector("#hoverBtn");
@@ -107,4 +107,37 @@ hbtn.addEventListener("mouseover", () => {
 hbtn.addEventListener("mouseleave", () => {
     more.style.filter = "grayscale(1)";
     heart.style.opacity = "0";
-}) 
+})
+
+
+let current;
+const LI = document.querySelector(".tabMenu");
+const CON = document.querySelector(".tabContent");
+LI.addEventListener("click", (e) => {
+    let tg = e.target;
+    console.log(tg);
+    [...LI.children].forEach(el => el.classList.remove("oo"))
+    if (current) current.classList.remove("oo");
+    tg.classList.add("oo");
+    current = tg;
+
+    let idx = [...LI.children].indexOf(tg);
+    console.log(idx);
+
+    [...CON.children].forEach(el => el.classList.remove("oo"));
+    [...CON.children][idx].classList.add("oo");
+})
+
+///
+
+
+$("#link").on("change", function () {
+    let linkSite = $(this).val();
+    if (!linkSite) return;
+    window.open(linkSite);
+})
+
+
+$(".popup01 button").on("click", function () {
+    $(this).parent().hide();
+})
