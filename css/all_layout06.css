@@ -105,10 +105,11 @@
     border: none;
     border-bottom: 1px solid #333;
     background: #111;
+    color: #fff;
 }
 
 .headerWrap .searchForm input[type="search"]:focus::placeholder {
-    color: transparent;
+    color: #fff;
 }
 
 .headerWrap .searchForm button {
