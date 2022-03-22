@@ -23,6 +23,7 @@ $(".visualSlide").slick(
 
 
 //슬라이드 애니메이션
+
 $(".visualSlide").on("afterChange", function (e, s, c) {
     $(".visualSlide figure").eq(c + 1).addClass("oo").siblings().removeClass("oo");
     if (c === 1) {
@@ -71,7 +72,7 @@ $(".allProduct i:last-child").on("click", function () {
 
 $(function () {
     $("#bgndVideo").YTPlayer({
-        videoURL: 'http://youtu.be/BsekcY04xvQ',
+        videoURL: 'https://youtu.be/vPX1N7yGheo',
         containment: '.movieBg',
         autoPlay: true,
         mute: true,
@@ -79,6 +80,8 @@ $(function () {
         opacity: 1,
         showControls: false,
         playOnlyIfVisible: true,
+        startAt: 5,
+        stopAt: 115,
     });
 });
 
@@ -138,6 +141,6 @@ $("#link").on("change", function () {
 })
 
 
-$(".popup01 button").on("click", function () {
+$(".popup01 .close").on("click", function () {
     $(this).parent().hide();
 })
