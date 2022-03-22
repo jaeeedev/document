@@ -140,8 +140,8 @@
     top: 50%;
     left: 200px;
     z-index: 999;
-    border-top: 100px solid #fff;
-    border-left: 100px solid transparent;
+    border-top: 70px solid #fff;
+    border-left: 70px solid transparent;
     transform: translateY(-50%) rotate(-135deg);
 }
 
@@ -150,8 +150,8 @@
     position: absolute;
     top: 50%;
     right: 200px;
-    border-top: 100px solid #fff;
-    border-left: 100px solid transparent;
+    border-top: 70px solid #fff;
+    border-left: 70px solid transparent;
     transform: translateY(-50%) rotate(45deg);
 }
 
