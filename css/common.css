@@ -9,6 +9,7 @@
     font-weight: inherit;
     color: inherit;
     font-style: normal;
+    box-sizing: border-box;
 }
 
 ul, ol {
